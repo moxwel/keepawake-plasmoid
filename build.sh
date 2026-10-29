@@ -11,15 +11,46 @@
 set -e
 cd "$(dirname "$0")"
 
+log() {
+    echo "[build] $*"
+}
+
+fail() {
+    echo "[build] ERROR: $*" >&2
+    exit 1
+}
+
+# Stops the build unless a tool is installed. Takes the tool name and what the build needs it for.
+require_tool() {
+    command -v "$1" >/dev/null 2>&1 || fail "'$1' not found, needed to $2"
+    log "  found $1: $(command -v "$1")"
+}
+
+log "Checking tools..."
+require_tool zip "pack the .plasmoid file"
+require_tool msgfmt "compile the translations (package gettext)"
+
+log "Reading metadata.json..."
 PLUGIN_ID=$(sed -n 's/.*"Id": *"\([^"]*\)".*/\1/p' metadata.json)
+[ -n "$PLUGIN_ID" ] || fail "no \"Id\" found in metadata.json"
+log "  id: $PLUGIN_ID"
 PACKAGE_DIR="build/keepawake"
 OUTPUT="build/keepawake.plasmoid"
 
-echo "Building $PLUGIN_ID..."
+log "Building $PLUGIN_ID..."
+log "  cleaning $PACKAGE_DIR and $OUTPUT"
 rm -rf "$PACKAGE_DIR" "$OUTPUT"
 mkdir -p "$PACKAGE_DIR"
+
+log "  copying metadata.json, contents/ and LICENSE to $PACKAGE_DIR"
 cp -r metadata.json contents LICENSE "$PACKAGE_DIR/"
+
+log "  compiling translations"
 translate/compile.sh "$PACKAGE_DIR"
 
+log "  packing $OUTPUT"
 (cd "$PACKAGE_DIR" && zip -qr ../keepawake.plasmoid metadata.json contents LICENSE)
-echo "Built $OUTPUT"
+log "  packed $OUTPUT ($(du -h "$OUTPUT" | cut -f1))"
+
+log "Output: $OUTPUT"
+log "Done."

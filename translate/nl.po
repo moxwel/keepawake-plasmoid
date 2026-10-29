@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Keep Awake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Keep Awake\n"
+"Report-Msgid-Bugs-To: https://github.com/moxwel/keepawake-plasmoid/issues\n"
+"POT-Creation-Date: 2026-10-19 01:25-0300\n"
+"PO-Revision-Date: 2026-10-28 10:32+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.10\n"
+
+#: contents/config/config.qml:6
+msgid "General"
+msgstr "Algemeen"
+
+#: contents/ui/configGeneral.qml:34
+msgid "Choose icon"
+msgstr "Pictogram kiezen"
+
+#: contents/ui/configGeneral.qml:53
+msgid "Reset to default"
+msgstr "Standaardpictogram herstellen"
+
+#: contents/ui/configGeneral.qml:66
+msgid "Sleep is blocked:"
+msgstr "Slaapstand is onderdrukt:"
+
+#: contents/ui/configGeneral.qml:72
+msgid "Sleep is allowed:"
+msgstr "Slaapstand is toegestaan:"
+
+#: contents/ui/configGeneral.qml:82
+msgid "Visibility:"
+msgstr "Zichtbaarheid:"
+
+#: contents/ui/configGeneral.qml:83
+msgid "Always show icon"
+msgstr "Pictogram altijd tonen"
+
+#: contents/ui/configGeneral.qml:87
+msgid "Keep the icon in the panel, even when sleep is allowed."
+msgstr "Toon het pictogram altijd op het paneel, zelfs als de slaapstand is toegestaan."
+
+#: contents/ui/main.qml:24
+msgid "Keep Awake widget"
+msgstr "Niet-slapenwidget"
+
+#: contents/ui/main.qml:44
+msgid "Sleep and screen locking are blocked"
+msgstr "Slaapstand en schermvergrendeling zijn onderdrukt"
+
+#: contents/ui/main.qml:45
+msgid "Sleep and screen locking are allowed"
+msgstr "Slaapstand en schermvergrendeling zijn toegestaan"
