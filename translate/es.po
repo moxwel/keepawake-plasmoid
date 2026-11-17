@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Keep Awake\n"
 "Report-Msgid-Bugs-To: https://github.com/moxwel/keepawake-plasmoid/issues\n"
-"POT-Creation-Date: 2026-10-19 00:00-0300\n"
+"POT-Creation-Date: 2026-10-19 01:25-0300\n"
 "PO-Revision-Date: 2026-10-19 00:00-0300\n"
 "Last-Translator: moxwel\n"
 "Language-Team: Spanish\n"
@@ -13,46 +13,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: contents/config/config.qml:6
+#: contents/config/config.qml
 msgid "General"
 msgstr "General"
 
-#: contents/ui/configGeneral.qml:34
+#: contents/ui/configGeneral.qml
 msgid "Choose icon"
 msgstr "Elegir icono"
 
-#: contents/ui/configGeneral.qml:53
+#: contents/ui/configGeneral.qml
 msgid "Reset to default"
 msgstr "Restablecer el valor predeterminado"
 
-#: contents/ui/configGeneral.qml:66
+#: contents/ui/configGeneral.qml
 msgid "Sleep is blocked:"
 msgstr "Suspensión inhibida:"
 
-#: contents/ui/configGeneral.qml:72
+#: contents/ui/configGeneral.qml
 msgid "Sleep is allowed:"
 msgstr "Suspensión permitida:"
 
-#: contents/ui/configGeneral.qml:82
+#: contents/ui/configGeneral.qml
 msgid "Visibility:"
 msgstr "Visibilidad:"
 
-#: contents/ui/configGeneral.qml:83
+#: contents/ui/configGeneral.qml
 msgid "Always show icon"
 msgstr "Mostrar siempre el icono"
 
-#: contents/ui/configGeneral.qml:87
+#: contents/ui/configGeneral.qml
 msgid "Keep the icon in the panel, even when sleep is allowed."
-msgstr "Mantener el icono en el panel, incluso cuando la suspensión está permitida."
+msgstr ""
+"Mantener el icono en el panel, incluso cuando la suspensión está permitida."
 
-#: contents/ui/main.qml:24
+#: contents/ui/main.qml
 msgid "Keep Awake widget"
 msgstr "Widget Keep Awake"
 
-#: contents/ui/main.qml:44
+#: contents/ui/main.qml
 msgid "Sleep and screen locking are blocked"
 msgstr "La suspensión y el bloqueo de pantalla están inhibidos"
 
-#: contents/ui/main.qml:45
+#: contents/ui/main.qml
 msgid "Sleep and screen locking are allowed"
 msgstr "La suspensión y el bloqueo de pantalla están permitidos"
